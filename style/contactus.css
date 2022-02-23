@@ -1,0 +1,48 @@
+h1
+{
+    color: goldenrod;
+    font-size: 500%;
+    font-weight: bold;   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#label
+{
+    color: wheat;
+}
+
+fieldset
+{
+    background-color: black;
+    border-color: wheat;
+}
+
+#inner
+{
+    color: whitesmoke;
+    display: inline-block;
+}
+
+legend
+{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label, p
+{
+    color: goldenrod;
+}

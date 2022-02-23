@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-#horizontal1
+#horizontal
 {
     display: flex;
     flex-direction: row;
