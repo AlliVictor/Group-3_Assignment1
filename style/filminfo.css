@@ -18,7 +18,7 @@ nav
     font-family: Helvetica, sans-serif;
     height: 100px;
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -34,7 +34,7 @@ nav a
     border: 2px solid wheat;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: space-evenly;
     justify-content: center;
 }
 
@@ -65,9 +65,46 @@ article
     font-weight: bold; 
 }
 
-h2
+h1
 {
     color: sandybrown;
+    font-size: 50px;
+
+    padding-bottom: -60px;
+    padding-left: 20px;
+}
+
+h2
+{
+    color: wheat;
+}
+
+figcaption
+{
+    color: goldenrod;
+}
+figure
+{
+    float: left;
+}
+
+p::first-letter
+{
+    font-size: 400%;
+}
+
+#houses
+{
+    float: left;
+}
+ul
+{
+    position: relative;
+}
+
+#author
+{
+    float: left;
 }
 
 footer
