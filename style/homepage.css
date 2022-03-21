@@ -9,11 +9,12 @@
 @media screen and (max-width: 800px) {
     #duneLogo {
         display: flex;
-        position: relative;
-        justify-content: center;
         padding-top: 25px;
         padding-bottom: 25px;
         height: 100px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 @media screen and (min-width: 800px) {
