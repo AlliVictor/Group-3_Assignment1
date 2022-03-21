@@ -10,7 +10,7 @@ header {
 }
 
 /*logo*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     #duneLogo {
         display: flex;
         padding-top: 25px;
@@ -21,7 +21,7 @@ header {
         transform: translateX(-50%);
     }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
     #duneLogo {
         display: flex;
         position: relative;
@@ -33,7 +33,7 @@ header {
 }
 
 /*nav*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .wrapper {
         display: flex;
         justify-content: left;
@@ -83,7 +83,7 @@ header {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
     .wrapper {
         display: flex;
         justify-content: right;
@@ -135,12 +135,21 @@ article
 }
 
 /*Text*/
-
+#title {
+    color: goldenrod;
+    font-size: 250%;
+    font-weight: bold;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
 /*Img*/
 
 /*Content*/
 
 /*form*/
+
 h1
 {
     color: goldenrod;
