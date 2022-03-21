@@ -287,3 +287,8 @@ footer a
 {
     color: goldenrod;
 }
+
+footer img
+{
+    height: 50px;
+}
