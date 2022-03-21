@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+		<meta charset="utf-8">
+		<meta name="author" content="Jared Sedran, Victor Alli"/>
+		<meta name="keywords" content="Dune, Zendaya, Timothée, Dave, Oscar, Film, Movie, Info, Connect, Contact"/>
+		<meta name="description" content="Renewed homepage for Dune website"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" type="text/css" href="../style/homepage.css">
+
+		<title>Dune</title>
+		
+        <style>
+            body 
+            {
+                background-color: black;
+            }
+
+            a:hover 
+            {
+                color: wheat;
+            }
+
+            a:active 
+            {
+                background-color: whitesmoke;
+            }
+        </style>
+	</head>
+    
+
+    <body>
+
+    <div id="detail1"></div>
+    <header>
+            <a href="./homepage.html">
+            <img src="../images/Dune_logo3.jpg" title="Dune logo" alt="" id="duneLogo" >
+            </a>
+        <nav>
+
+        <div class="wrapper">
+        <div id="tabs">
+            <div class="menus" id="tab2">
+                <a href="./filminfo.html" style="text-decoration: none;"> Info </a>
+            </div>
+
+            <div class="menus" id="tab3">
+                <a href="./cast.html" style="text-decoration: none;"> Cast </a>
+            </div>
+
+            <div class="menus" id="tab4">
+                <a href="./reviews.html" style="text-decoration: none;"> Reviews </a>
+            </div> 
+        </div>
+        </div>
+
+        </nav>
+    </header>
+    <div id="detail1"></div>
+
+    <main>
+        <div id="poster">
+            <img src="../images/dunePoster.jpg" title="Dune Poster" alt="" id="dunePoster" >
+        </div>
+
+        <div id="title">
+            <h2>My Road Leads Into The Desert
+                <br>
+                - Paul Atreides
+            </h2>
+        </div>
+
+            <br>
+
+        <div id="detail1"></div>
+
+            <br>
+
+            <h2 id="subtitle">Actors</h2>
+
+        <div class="container">
+            <div class="actors" id="actor1" title="Zendaya" alt="Zendaya">
+                <nav>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Zendaya" style="text-decoration: none;" target="_blank">Zendaya</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="actors" id="actor2" title="Timothée Chalamet" alt="Timothée Chalamet">
+                <nav>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Timoth%C3%A9e_Chalamet" style="text-decoration: none;" target="_blank">Timothée Chalamet</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="actors" id="actor3" title="Oscar Isaac" alt="Oscar Isaac">
+                <nav>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Oscar_Isaac" style="text-decoration: none;" target="_blank">Oscar Isaac</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="actors" id="actor4" title="Dave Bautista" alt="Dave Bautista">
+                <nav>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Dave_Bautista" style="text-decoration: none;" target="_blank">Dave Bautista</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+            <br>
+        <div id="detail1"></div>
+
+        <form method="POST" action="mailto:yamannejad@mtroyal.ca" name="Contact Us Information" enctype="multipart/form-data">
+            <h1>Contact Us</h1>
+
+            <fieldset>
+                <label id="field">Email:<sup>*</sup>
+                    <input type="text" name="Email" value="" placeholder="example@email.com" size="30" maxlength="50" required>
+                </label>
+
+                <br/>
+
+                <label id="field">Phone:
+                    <input type="tel" name="Phone Number" placeholder="xxx-xxx-xxxx" size="30" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"/>                
+                </label>
+
+                <br/>
+
+                <label>Current Date:
+                    <input type="date" name="Current Date">
+                </label>
+
+                <br/><br/><br/>
+
+                <fieldset id="inner">
+                    <label>Subject
+                        <input type="text" value="" size="30" maxlength="25" placeholder="Subject" required>
+                    </label>
+
+                    <br/>
+
+                    <label id="commentbox">Enter your comments here
+                        <br/>
+                        <textarea name="comment" rows="20" cols="90" required></textarea>
+                    </label>
+                </fieldset>
+
+                <br/><br/>
+
+                
+                <!--Clear, return to defult values-->
+                <input class="submitandclear" id="clear" type="reset" value="Clear">
+
+                <!--Button on storing info given-->
+                <input class="submitandclear" id="submit" type="submit" value="Submit">
+
+            </fieldset>
+        </form>
+    </main>
+
+        <br/>
+
+        <footer>
+            <a>Connect With Us At:  &nbsp; &nbsp;</a>
+            <a href="https://www.instagram.com/dunemovie/?hl=en">
+                <img src="../images/instagramlogo.png" alt="" >
+            </a>
+
+            <a href="https://www.facebook.com/dune/">
+                <img src="../images/facebooklogo.png" alt="" >
+            </a>
+
+            <a href="https://twitter.com/dunemovie?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                <img src="../images/twitterlogo.png" alt="" >
+            </a>
+        </footer>
+    </body>
+
+</html>
