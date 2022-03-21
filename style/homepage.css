@@ -1,8 +1,12 @@
-#detail1
-{
+#detail1 {
     background-color: gray;
     height: 10px;
     width: 100%;
+}
+
+header {
+    position: relative;
+    display: flex;
 }
 
 /*logo*/
@@ -66,6 +70,7 @@
         color: goldenrod;
         font-size: 50%;
         height: 20px;
+        width: 20px;
         font-weight: bold;   
         background-color: black;
         padding: 2px 30px;
@@ -92,16 +97,19 @@
         display: grid;
         grid-row: 2/3;
         grid-column: 7/8;
+        padding-right: 10px;
     }
     #tab3 {
         display: grid;
         grid-row: 2/3;
         grid-column: 8/9;
+        padding-right: 10px;
     }
     #tab4 {
         display: grid;
         grid-row: 2/3;
         grid-column: 9/10;
+        padding-right: 5px;
     }
     nav a {
         color: goldenrod;
@@ -119,20 +127,6 @@
     }
 }
 
-
-header
-{
-    position: relative;
-    display: flex;
-}
-
-hr
-{
-    height: 1px;
-    background-color: wheat;
-    border: none;
-}
-
 article
 {
     color: whitesmoke;
@@ -140,30 +134,11 @@ article
     font-weight: bold; 
 }
 
-h2
-{
-    color: sandybrown;
-}
+/*Text*/
 
-footer
-{
-    position: relative;
-    border: 2px solid goldenrod;
-    height: 50px;
-    width:100%;
-    background-color: black;
-    bottom: 0px;
+/*Img*/
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-footer a
-{
-    color: goldenrod;
-}
+/*Content*/
 
 /*form*/
 h1
@@ -211,6 +186,27 @@ legend
 }
 
 label, p
+{
+    color: goldenrod;
+}
+
+/*footer*/
+footer
+{
+    position: relative;
+    border: 2px solid goldenrod;
+    height: 50px;
+    width:100%;
+    background-color: black;
+    bottom: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a
 {
     color: goldenrod;
 }
