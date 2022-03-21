@@ -2,7 +2,7 @@
 <html lang="en"> 
     <head>
 		<meta charset="utf-8">
-		<meta name="author" content="Jared Sedran, Victor Alli, Sean T.?"/>
+		<meta name="author" content="Jared Sedran, Victor Alli"/>
 		<meta name="keywords" content=""/>
 		<meta name="description" content="Home Screen"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -31,25 +31,109 @@
     
 
     <body>
-        <div id="detail1"></div>
-        <nav id="horizontal">
-            <a href="./homepage.html" style="text-decoration: none;"> Home </a>
-            <a href="./filminfo.html" style="text-decoration: none;"> About the Film </a>
-            <a href="./cast.html" style="text-decoration: none;"> Cast </a>
-            <a href="./reviews.html" style="text-decoration: none;"> Reviews </a>      
-        </nav>
 
-        <header>
-            <figure id="duneLogo">
-                <img src="../images/Dune_logo2.jpg" title="Dune logo " alt="" width="1960" height="800">
-            </figure>
-        </header>
-        <div id="detail1"></div>
+    <div id="detail1"></div>
+    <header>
+            <a href="./homepage.html">
+            <img src="../images/Dune_logo3.jpg" title="Dune logo" alt="" id="duneLogo" >
+            </a>
+        <nav>
+
+        <div class="wrapper" id="tabs">
+            <div class="menus" id="tab2">
+                <a href="./filminfo.html" style="text-decoration: none;"> Film Info </a>
+            </div>
+
+            <div class="menus" id="tab3">
+                <a href="./cast.html" style="text-decoration: none;"> Cast </a>
+            </div>
+
+            <div class="menus" id="tab4">
+                <a href="./reviews.html" style="text-decoration: none;"> Reviews </a>
+            </div> 
+        </div>  
+
+        </nav>
+    </header>
+    <div id="detail1"></div>
+
+    <main>
+        <form method="POST" action="mailto:yamannejad@mtroyal.ca" name="Contact Us Information">
+            <h1>Contact Us</h1>
+
+            <fieldset>
+                <label>Email:<sup>*</sup>
+                    <input type="text" name="Email" value="" placeholder="example@email.com" size="30" maxlength="50" required>
+                </label>
+
+                <br/><br/>
+
+                <label>Phone:
+                    <input type="tel" name="Phone Number" placeholder="xxx-xxx-xxxx" size="30" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"/>                
+                </label>
+
+                <br/><br/>
+
+                <p>
+                    <label>Current Date:
+                        <input type="date" name="Current Date">
+                    </label>
+                </p>
+                    
+                <p>Receive Contact Us Information: 
+                    <label id="label">Yes
+                        <input name="YorN" type="radio" value="yes">
+                    </label>
+
+                    &nbsp; &nbsp; &nbsp;
+
+                    <label id="label">No
+                        <input name="YorN" type="radio" value="no">
+                    </label>
+                </p>
+            
+                <p>Receive Email, Text or Both:
+                    <label id="label">Email
+                        <input name="Email" type="checkbox" value="Email">
+                    </label>
+
+                    &nbsp; &nbsp; &nbsp;
+
+                    <label id="label">Text
+                        <input name="Text" type="checkbox" value="Text">
+                    </label>
+                </p>
+
+                <br/>
+
+                <fieldset id="inner">
+                    <label>Subject
+                        <input type="text" value="" size="30" maxlength="25" placeholder="Subject" required>
+                    </label>
+
+                    <br/><br/>
+
+                    <label id="commentbox">Enter your comments here
+                        <br/>
+                        <textarea name="comment" rows="20" cols="90" required></textarea>
+                    </label>
+                </fieldset>
+
+                <br/><br/>
+
+                <!--Button on storing info given-->
+                <input class="submitandclear" type="submit" value="Submit">
+
+                <!--Clear, return to defult values-->
+                <input class="submitandclear" type="reset" value="Clear">
+            </fieldset>
+        </form>
+    </main>
 
         <br/>
 
         <footer>
-        <a href="./contactus.html" style="text-decoration: none;"> Contact Us </a>
+
         </footer>
     </body>
 
