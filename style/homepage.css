@@ -246,6 +246,12 @@ article
     font-weight: bold; 
 }
 
+#field
+{
+    display: block;
+    position: relative;
+}
+
 /*Text*/
 #title {
     color: goldenrod;

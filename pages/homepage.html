@@ -113,60 +113,34 @@
             <br>
         <div id="detail1"></div>
 
-        <form method="POST" action="mailto:yamannejad@mtroyal.ca" name="Contact Us Information">
+        <form method="POST" action="mailto:yamannejad@mtroyal.ca" name="Contact Us Information" enctype="multipart/form-data">
             <h1>Contact Us</h1>
 
             <fieldset>
-                <label>Email:<sup>*</sup>
+                <label id="field">Email:<sup>*</sup>
                     <input type="text" name="Email" value="" placeholder="example@email.com" size="30" maxlength="50" required>
                 </label>
 
-                <br/><br/>
+                <br/>
 
-                <label>Phone:
+                <label id="field">Phone:
                     <input type="tel" name="Phone Number" placeholder="xxx-xxx-xxxx" size="30" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}"/>                
                 </label>
 
-                <br/><br/>
-
-                <p>
-                    <label>Current Date:
-                        <input type="date" name="Current Date">
-                    </label>
-                </p>
-                    
-                <p>Receive Contact Us Information: 
-                    <label id="label">Yes
-                        <input name="YorN" type="radio" value="yes">
-                    </label>
-
-                    &nbsp; &nbsp; &nbsp;
-
-                    <label id="label">No
-                        <input name="YorN" type="radio" value="no">
-                    </label>
-                </p>
-            
-                <p>Receive Email, Text or Both:
-                    <label id="label">Email
-                        <input name="Email" type="checkbox" value="Email">
-                    </label>
-
-                    &nbsp; &nbsp; &nbsp;
-
-                    <label id="label">Text
-                        <input name="Text" type="checkbox" value="Text">
-                    </label>
-                </p>
-
                 <br/>
+
+                <label>Current Date:
+                    <input type="date" name="Current Date">
+                </label>
+
+                <br/><br/><br/>
 
                 <fieldset id="inner">
                     <label>Subject
                         <input type="text" value="" size="30" maxlength="25" placeholder="Subject" required>
                     </label>
 
-                    <br/><br/>
+                    <br/>
 
                     <label id="commentbox">Enter your comments here
                         <br/>
