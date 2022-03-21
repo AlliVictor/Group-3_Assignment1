@@ -4,13 +4,90 @@
     width: 100%;
 }
 
+#subtitle 
+{
+    color: goldenrod;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+}
+
 header {
     position: relative;
     display: flex;
 }
 
+.container 
+{
+    display: grid;
+    grid-gap: 16px;
+    padding: 10px 0;
+    margin: 10px auto;
+    width: 1500;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+}
+
+.actors {
+    min-width: 150px;
+    height: 750px;
+    border: 2px solid #0d0d0e;
+    border-radius: 12px;
+    display: flex;
+    align-items: end;
+    box-sizing: border-box;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 1em;
+}
+
+#actor1 
+{
+    background-image: url(../images/zendaya.jpg);
+    opacity: 0.95;
+    background-size: cover;
+    position: relative;
+}
+
+#actor2 
+{
+    background-image: url(../images/timChalamet2.jpg);
+    opacity: 0.95;
+    background-size: cover;
+    position: relative;
+}
+
+#actor3 
+{
+    background-image: url(../images/oscIsasc2.jpg);
+    opacity: 0.95;
+    background-size: cover;
+    position: relative;
+}
+
+#actor4 
+{
+    background-image: url(../images/daveBautista.jpg);
+    opacity: 0.95;
+    background-size: cover;
+    position: relative;
+}
+
+
 /*logo*/
 @media screen and (max-width: 850px) {
+    .container {
+        display: block;
+        grid-template-columns: 1fr;
+    }
+
     #duneLogo {
         display: flex;
         padding-top: 25px;
@@ -20,20 +97,7 @@ header {
         left: 50%;
         transform: translateX(-50%);
     }
-}
-@media screen and (min-width: 850px) {
-    #duneLogo {
-        display: flex;
-        position: relative;
-        justify-content: left;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        height: 150px;
-    }
-}
 
-/*nav*/
-@media screen and (max-width: 850px) {
     .wrapper {
         display: flex;
         justify-content: left;
@@ -81,36 +145,76 @@ header {
         align-items: center;
         justify-content: center;
     }
+
+    #actor1 a
+    {
+        height: 100px;
+        width: 200px;
+    }
+
+    #actor3 a
+    {
+        height: 100px;
+        width: 200px;
+    }
+
+    #actor4 a
+    {
+        height: 100px;
+        width: 200px;
+    }
 }
 
 @media screen and (min-width: 850px) {
+    .container {
+        width: 100%;
+        position: relative;
+    }
+
+    nav a {
+        font-size: 25px;
+    }
+
+    #duneLogo {
+        display: flex;
+        position: relative;
+        justify-content: left;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        height: 150px;
+    }
     .wrapper {
         display: flex;
         justify-content: right;
     }
+
     #tabs {
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+
     #tab2 {
         display: grid;
         grid-row: 2/3;
         grid-column: 7/8;
         padding-right: 10px;
     }
+
     #tab3 {
         display: grid;
         grid-row: 2/3;
         grid-column: 8/9;
         padding-right: 10px;
     }
+
     #tab4 {
         display: grid;
         grid-row: 2/3;
         grid-column: 9/10;
         padding-right: 5px;
     }
+
     nav a {
         color: goldenrod;
         font-size: 150%;
@@ -127,10 +231,18 @@ header {
     }
 }
 
+@media screen and (max-width: 1060px) {
+    #actor2 a
+    {
+        height: 100px;
+        width: 200px;
+    }
+}
+
 article
 {
     color: whitesmoke;
-    font-family: Helvetica, sans-serif;
+    font-family: "Lucida Handwriting", Helvetica, Serif, Monospace,sans-serif;
     font-weight: bold; 
 }
 
@@ -145,8 +257,14 @@ article
     justify-content: center; 
 }
 
+#title h2
+{
+    text-align: center;
+}
+
 /*Img*/
 #poster {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,68 +272,7 @@ article
 }
 
 /*Content*/
-@media screen and (max-width: 850px) {
-    .gridContent {
-        display: grid;
-        justify-content: center;
-    }
-    #grid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    #grid2 {
-        display: grid;
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
-    #grid3 {
-        display: grid;
-        grid-row: 2/3;
-        grid-column: 1/2;
-    }
-    #grid4 {
-        display: grid;
-        grid-row: 3/4;
-        grid-column: 1/2;
-    }
-    #grid5 {
-        display: grid;
-        grid-row: 4/5;
-        grid-column: 1/2;
-    }
-}
-@media screen and (min-width: 850px) {
-    .gridContent {
-        display: grid;
-        justify-content: center;
-    }
-    #grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    #grid2 {
-        display: grid;
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
-    #grid3 {
-        display: grid;
-        grid-row: 1/2;
-        grid-column: 2/3;
-    }
-    #grid4 {
-        display: grid;
-        grid-row: 2/3;
-        grid-column: 1/2;
-    }
-    #grid5 {
-        display: grid;
-        grid-row: 2/3;
-        grid-column: 2/3;
-    }
-}
+
 
 /*form*/
 h1
@@ -232,10 +289,17 @@ h1
 
 form
 {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: SlateGrey;
+}
+
+.submitandclear
+{
+    float: right;
 }
 
 #label
@@ -246,12 +310,13 @@ form
 fieldset
 {
     background-color: black;
-    border-color: wheat;
+    border-color: goldenrod;
+    margin-bottom: 15px;
 }
 
 #inner
 {
-    color: whitesmoke;
+    color: goldenrod;
     display: inline-block;
 }
 
