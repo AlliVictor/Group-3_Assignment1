@@ -156,7 +156,7 @@ article
 /*Content*/
 @media screen and (max-width: 850px) {
     .gridContent {
-        display: flex;
+        display: grid;
         justify-content: center;
     }
     #grid {
@@ -187,7 +187,7 @@ article
 }
 @media screen and (min-width: 850px) {
     .gridContent {
-        display: flex;
+        display: grid;
         justify-content: center;
     }
     #grid {
@@ -286,9 +286,4 @@ footer
 footer a
 {
     color: goldenrod;
-}
-
-footer img
-{
-    height: 50px;
 }
